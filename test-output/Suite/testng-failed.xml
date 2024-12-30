@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.Login_TestCases">
+        <methods>
+          <include name="CloseConnection"/>
+          <include name="setup"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- TestCases.Login_TestCases -->
+      <class name="TestCases.NetBanking_TestCases">
+        <methods>
+          <include name="NetBankingTestCases"/>
+          <include name="enterUserIdTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCases.NetBanking_TestCases -->
+      <class name="TestCases.LoansTestCases">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyClickOnCarLoan"/>
+          <include name="CloseConnection"/>
+          <include name="verifyClickOnHomeLoan"/>
+          <include name="tearDown"/>
+          <include name="verifyClickOnGoldLoan"/>
+          <include name="verifyClickOnEducationLoan"/>
+          <include name="verifyClickOnBusinessLoan"/>
+          <include name="verifyHoverOverBorrowMenu"/>
+          <include name="verifyClickOnPersonalLoan"/>
+        </methods>
+      </class> <!-- TestCases.LoansTestCases -->
+      <class name="TestCases.HomePage_TestCase">
+        <methods>
+          <include name="CloseConnection"/>
+          <include name="verifyHomePageLoadsCorrectly"/>
+          <include name="verifyUrlUsesHTTPS"/>
+          <include name="setUp"/>
+          <include name="verifyLogoIsDisplayedAndClickable"/>
+        </methods>
+      </class> <!-- TestCases.HomePage_TestCase -->
+      <class name="TestCases.MyAccount_TestCase">
+        <methods>
+          <include name="MyAccount_Page"/>
+          <include name="CloseConnection"/>
+        </methods>
+      </class> <!-- TestCases.MyAccount_TestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
